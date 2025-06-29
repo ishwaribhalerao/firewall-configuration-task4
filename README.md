@@ -49,21 +49,13 @@ Restores original state by removing the test block rule on port 23.
 sudo ufw status verbose
 ```
 
-### 🔎 Observations
+🔎 Observations
     UFW is enabled and logging is set to low.
-
     Default policy:
-
         Incoming traffic: Denied
-
         Outgoing traffic: Allowed
-
     Firewall rules successfully:
-
         Blocked port 23 (Telnet)
-
         Allowed port 22 (SSH)
-
     Outbound traffic on ports 80 and 443 is permitted (web access).
-
-    Firewall effectively filters traffic based on defined rules, helping protect the system from unauthorized access.
+    Firewall effectively filters traffic based on defined rules, helping protect the system      from unauthorized access.
