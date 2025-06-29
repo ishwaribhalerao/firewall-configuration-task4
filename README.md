@@ -50,8 +50,8 @@ sudo ufw status verbose
 ```
 
 🔎 Observations
-    UFW is enabled and logging is set to low.
-    Default policy:
+   ` UFW is enabled and logging is set to low.`
+   ` Default policy:`
         Incoming traffic: Denied
         Outgoing traffic: Allowed
     Firewall rules successfully:
