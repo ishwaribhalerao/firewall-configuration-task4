@@ -48,14 +48,27 @@ Restores original state by removing the test block rule on port 23.
 ```bash
 sudo ufw status verbose
 ```
+## 🔎 Observations
 
-🔎 Observations
-   ` UFW is enabled and logging is set to low.`
-   ` Default policy:`
-        Incoming traffic: Denied
-        Outgoing traffic: Allowed
-    Firewall rules successfully:
-        Blocked port 23 (Telnet)
-        Allowed port 22 (SSH)
-    Outbound traffic on ports 80 and 443 is permitted (web access).
-    Firewall effectively filters traffic based on defined rules, helping protect the system      from unauthorized access.
+- **UFW Status:** Enabled  
+- **Logging Level:** Low  
+
+- **Default Policies:**  
+  - **Incoming Traffic:** Denied  
+  - **Outgoing Traffic:** Allowed  
+
+- **Firewall Rules Applied:**  
+  - ✅ Blocked **Port 23 (Telnet)** – Confirmed with a refused connection  
+  - ✅ Allowed **Port 22 (SSH)** – Ensures secure remote access  
+
+- **Web Access:**  
+  - Outbound traffic to **Ports 80 (HTTP)** and **443 (HTTPS)** is permitted  
+
+- **Conclusion:**  
+  The firewall is effectively filtering traffic based on the defined rules, helping secure the system by preventing unauthorized access while allowing necessary communication channels.
+
+---
+
+## ✅ Summary
+
+In this task, UFW (Uncomplicated Firewall) was configured and tested on a Kali Linux system to manage network traffic securely. Basic rules were applied to block unauthorized services like Telnet and allow essential services such as SSH. The firewall's default policy was set to deny all incoming and allow all outgoing traffic, providing a solid baseline security posture. The tests confirmed that the firewall rules were enforced effectively, showcasing UFW’s ease of use and practical application in real-world scenarios for system protection.
